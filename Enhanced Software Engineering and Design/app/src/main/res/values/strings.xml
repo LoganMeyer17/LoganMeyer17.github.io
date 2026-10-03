@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Inventory Tracking</string>
+    <string name="login_title">Inventory Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="username_rules">Username must be 4–20 characters with no spaces. Use letters, numbers, dots, underscores, or hyphens.</string>
+    <string name="password_rules">Password must be 8–20 characters with no spaces.</string>
+    <string name="log_in">Log In</string>
+    <string name="log_out">Log Out</string>
+    <string name="create_account">Create Account</string>
+    <string name="registration_title">Create Account</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="inventory_title">Inventory</string>
+    <string name="current_inventory">Current Inventory</string>
+    <string name="add_item">Add Item</string>
+    <string name="item_name">Item Name</string>
+    <string name="sku">SKU</string>
+    <string name="quantity">Quantity</string>
+    <string name="restock_level">Low-Stock Threshold</string>
+    <string name="sku_format">SKU: %1$s</string>
+    <string name="quantity_format">Quantity: %1$d</string>
+    <string name="stock_in">In stock</string>
+    <string name="stock_low">Low stock</string>
+    <string name="stock_out">Out of stock</string>
+    <string name="empty_inventory">No items yet. Tap Add Item to get started.</string>
+    <string name="item_added">Item added.</string>
+    <string name="item_deleted">Item deleted.</string>
+    <string name="quantity_updated">Quantity updated.</string>
+    <string name="delete_title">Delete Item?</string>
+    <string name="delete_message">Delete “%1$s” from inventory? This cannot be undone.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="plus_symbol" translatable="false">+</string>
+    <string name="minus_symbol" translatable="false">-</string>
+    <string name="increase_quantity">Increase quantity</string>
+    <string name="decrease_quantity">Decrease quantity</string>
+    <string name="increase_quantity_description">Increase quantity for %1$s</string>
+    <string name="decrease_quantity_description">Decrease quantity for %1$s</string>
+    <string name="delete_item_description">Delete %1$s</string>
+    <string name="sms_title">SMS Notifications</string>
+    <string name="sms_description">Allow SMS notifications to receive alerts when inventory items reach zero.</string>
+    <string name="sms_permission_description">SMS is optional. This classroom version sends test alerts to emulator 5554.</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="sms_enabled">SMS alerts enabled.</string>
+    <string name="sms_disabled">SMS alerts disabled.</string>
+    <string name="sms_permission_denied">SMS permission was not granted. Inventory still works without alerts.</string>
+    <string name="sms_submitted">Alert submitted to the SMS service. Delivery is not confirmed.</string>
+    <string name="sms_failed">The SMS alert could not be submitted.</string>
+    <string name="sms_message">Inventory alert: %1$s is out of stock.</string>
+    <string name="password_mismatch">The passwords do not match.</string>
+    <string name="invalid_credentials">The username or password is incorrect.</string>
+    <string name="duplicate_sku">That SKU already exists. Choose another SKU.</string>
+    <string name="quantity_limit">Quantity must stay between 0 and 2,147,483,647.</string>
+    <string name="item_name_error">Enter an item name of 100 characters or fewer.</string>
+    <string name="sku_error">SKU must be 1–40 letters, numbers, dots, underscores, or hyphens with no spaces.</string>
+    <string name="quantity_error">Enter a whole-number quantity from 0 to 2,147,483,647.</string>
+    <string name="restock_level_error">Enter a whole-number low-stock threshold from 0 to 2,147,483,647.</string>
+    <string name="missing_field">Missing field.</string>
+    <string name="username_exists">That username already exists. Choose another username.</string>
+    <string name="database_error">The operation could not be completed. Please try again.</string>
+    <string name="required_login">Enter your username and password.</string>
+    <string name="account_created">Account created. You can now log in.</string>
+    <string name="item_missing">This item is no longer available.</string>
+    <string name="retry_load">Retry Loading Inventory</string>
+    <string name="search_inventory">Search by item name or SKU</string>
+    <string name="filter_inventory">Filter inventory</string>
+    <string name="sort_inventory">Sort inventory</string>
+    <string name="no_matching_items">No inventory items match the current search and filter.</string>
+    <string-array name="stock_filter_options">
+        <item>All Items</item>
+        <item>Low Stock</item>
+        <item>Out of Stock</item>
+    </string-array>
+    <string-array name="inventory_sort_options">
+        <item>Name A-Z</item>
+        <item>SKU (Alphanumeric)</item>
+        <item>Quantity Low to High</item>
+        <item>Restock Priority</item>
+    </string-array>
+</resources>
