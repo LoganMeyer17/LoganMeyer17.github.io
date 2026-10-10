@@ -1,5 +1,5 @@
-# LoganMeyer17.github.io
-Computer Science ePortfolio for CS 499
+# Computer Science ePortfolio
+CS 499 Capstone Portfolio
 
 
 
