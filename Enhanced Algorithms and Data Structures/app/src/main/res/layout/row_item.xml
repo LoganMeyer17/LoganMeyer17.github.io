@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/inventory_row_gray"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/rowItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Eggs" />
+
+    <TextView
+        android:id="@+id/rowSku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:text="SKU: 1234" />
+
+    <TextView
+        android:id="@+id/rowQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:text="Quantity: 12" />
+
+    <TextView
+        android:id="@+id/rowRestock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:text="In stock" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/inventory_button_gray"
+            android:contentDescription="@string/increase_quantity"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/plus_symbol"
+            android:textColor="@color/original_orange"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/inventory_button_gray"
+            android:contentDescription="@string/decrease_quantity"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/minus_symbol"
+            android:textColor="@color/original_orange"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/inventory_button_gray"
+            android:minHeight="48dp"
+            android:text="@string/delete"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>
