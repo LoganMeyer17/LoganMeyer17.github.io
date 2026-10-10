@@ -2,15 +2,14 @@
 title: Algorithms and Data Structures
 ---
 
-# Algorithms and Data Structures
 
-Artifact and Selection
+# Artifact and Selection
 
 For this enhancement, I used the Inventory Tracking Android application that I originally created in CS 360 Mobile Architecture and Programming before beginning CS 499. The application uses Java, XML layouts, and a local SQLite database. It allows users to create an account, log in, manage inventory records, and choose whether to allow SMS alerts. I completed the algorithms and data structures enhancement and incorporated it into the final cumulative artifact.
 
 I selected this artifact because inventory information becomes harder to manage as the number of records increases. The earlier version could display inventory, but it did not give users useful ways to search, filter, sort, or prioritize the records. Improving these areas allowed me to demonstrate how algorithms and data structures can solve practical problems within an existing application.
 
-Algorithms and Data Structures Improvements
+# Algorithms and Data Structures Improvements
 
 The main addition for this enhancement is the InventoryOrganizer class. This class uses a list to maintain the inventory records, a HashMap to associate each SKU with an InventoryItem, and a PriorityQueue to organize items that need to be restocked. Separating this logic from the inventory screen makes the algorithms easier to understand, maintain, and test.
 
@@ -20,7 +19,7 @@ Each inventory item includes a low-stock threshold. When an item’s quantity fa
 
 The SQLite database stores the low-stock threshold, and a migration adds the value to existing inventory records. I kept SQLiteOpenHelper instead of changing the application to Room because replacing the entire database system was not necessary for this enhancement. The database change remained focused on what the restocking algorithm needed while preserving compatibility with the rest of the application.
 
-Course Outcomes and Final Integration
+# Course Outcomes and Final Integration
 
 I chose each structure based on the operation it needed to perform. The list supports displaying, filtering, and sorting records. The HashMap supports direct SKU lookup, and the PriorityQueue organizes items by restocking urgency.
 
@@ -35,7 +34,7 @@ The process of responding to instructor feedback supports Course Outcome One: Em
 
 The written materials support Course Outcome Two: Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts. The enhancement narrative, testing documentation, code-review presentation, screenshots, and ePortfolio explain the project and its results for both technical and nontechnical audiences. My professional self-assessment and completed ePortfolio will provide additional evidence for Course Outcomes One and Two.
 
-Reflection, Testing, and Feedback
+# Reflection, Testing, and Feedback
 
 One of the main challenges was keeping the list, HashMap, and PriorityQueue synchronized. A quantity change can affect the displayed record, the item stored under an SKU, and its position in the restocking order. I learned that a Java PriorityQueue does not automatically rearrange an existing item when one of its values changes. Rebuilding the supporting structures after a change provided a manageable solution and made the behavior easier to test.
 
