@@ -1,13 +1,15 @@
+---
+title: Software Design and Engineering
+---
 
-# Software Design and Engineering
 
-Artifact and Selection
+# Artifact and Selection
 
 For this enhancement, I chose the Inventory Tracking Android application I originally built in CS 360 Mobile Architecture and Programming. The application uses Java, XML layouts, and a local SQLite database. Users can create an account, log in, manage inventory items, and choose whether to allow SMS alerts.
 
 I selected this application because its basic features worked, but there were several areas that needed improvement. The Activity classes handled too many responsibilities, and changing one inventory item caused the entire displayed list to be rebuilt. Validation and account creation were also handled directly within the screens. Including this project in my ePortfolio gives me a chance to show how I can review earlier work, recognize design problems, and improve the organization and maintainability of an existing application.
 
-Software Design Improvements
+# Software Design Improvements
 
 My main focus was organizing the code without completely changing how the application works. I created an InputValidator class to keep input rules in one place and an InventoryItem class to represent each inventory record. InventoryAdapter uses RecyclerView to display inventory items and reuse row views instead of rebuilding the full list after every change. DatabaseHelper now returns InventoryItem objects instead of requiring the Activity to work directly with database Cursors. These changes reduced the amount of work handled inside the inventory screen and gave each class a clearer purpose.
 
@@ -17,7 +19,7 @@ I made additional interface improvements while finalizing the application. Inven
 
 The final version also addresses the security and ownership concerns mentioned in my instructor’s feedback. Passwords are now salted and hashed instead of being stored as readable text. Inventory records are connected to individual users so one account cannot view or change another user’s inventory. Although these changes are also part of the database enhancement, including them in the published version makes the overall application safer and more complete.
 
-Course Outcomes and Plan Updates
+# Course Outcomes and Plan Updates
 
 This enhancement mainly supports Course Outcome Four, which focuses on using appropriate computing techniques and tools to develop useful solutions. Separating responsibilities, creating model and helper classes, improving the inventory display, and testing the application all show progress toward this outcome.
 
@@ -27,7 +29,7 @@ I considered replacing SQLiteOpenHelper with Room, but I decided to improve the 
 
 Search, sorting, SKU lookup, and restocking priorities were originally planned for the algorithms and data structures enhancement. Those features were completed during the later stage of the project and remain included in the final application. The published artifact is the latest cumulative version, while this narrative focuses on the software design and engineering work.
 
-Reflection and Testing
+# Reflection and Testing
 
 One challenge was deciding how much to change at once. My first revision felt too different from the original application, so I chose a design that improved the structure while remaining easy for me to understand. This helped me think more carefully about why each class was needed and how the different parts of the application should work together.
 
