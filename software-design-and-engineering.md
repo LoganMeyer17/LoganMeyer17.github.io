@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Software Design and Engineering
 ---
 
