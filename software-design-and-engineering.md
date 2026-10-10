@@ -1,6 +1,3 @@
----
-title: Software Design and Engineering
----
 
 # Software Design and Engineering
 
