@@ -1,14 +1,11 @@
 # Computer Science ePortfolio
 CS 499 Capstone Portfolio
 
-
-
 ## Code Review
 
 This code review examines the original CS 360 Inventory Tracking application and explains the enhancements planned for software design, algorithms and data structures, and databases.
 
 <a href="https://youtu.be/_EPFmZ-n9gY">Watch My CS 499 Code Review</a>
-
 
 ## Software Design and Engineering
 
@@ -20,8 +17,16 @@ For this enhancement, I improved the original CS 360 Inventory Tracking applicat
 
 ## Algorithms and Data Structures
 
-For this enhancement, I expanded the original CS 360 Inventory Tracking application by adding inventory searching, filtering, sorting, exact SKU lookup, and restocking priorities. The enhanced application uses a list, HashMap, and PriorityQueue to organize inventory information efficiently. Its functionality is supported by 18 local unit tests and 10 Android instrumented tests.
+For this enhancement, I expanded the original CS 360 Inventory Tracking application by adding inventory searching, filtering, sorting, exact SKU lookup, and restocking priorities. The enhanced application uses a list, HashMap, and PriorityQueue to organize inventory information efficiently. Its functionality is supported by 18 local unit tests.
 
 - [Read the Algorithms and Data Structures Narrative](https://loganmeyer17.github.io/algorithms-and-data-structures.html)
 - [View the Enhanced Algorithms and Data Structures App](https://github.com/LoganMeyer17/LoganMeyer17.github.io/tree/main/Enhanced%20Algorithms%20and%20Data%20Structures)
-- [View the Automated Testing Evidence](https://github.com/LoganMeyer17/LoganMeyer17.github.io/tree/main/Enhanced%20Algorithms%20and%20Data%20Structures/Testing%20Evidence)
+- [View the Algorithms Testing Evidence](https://github.com/LoganMeyer17/LoganMeyer17.github.io/tree/main/Enhanced%20Algorithms%20and%20Data%20Structures/Testing%20Evidence)
+
+## Databases
+
+For this enhancement, I finalized the Inventory Tracking application's database by adding salted password hashing, account-owned inventory, database constraints, transactions, versioned migrations, and user-specific inventory history. The database behavior is supported by nine database tests and a complete suite of 11 passing Android instrumented tests.
+
+- [Read the Database Narrative](https://loganmeyer17.github.io/databases.html)
+- [View the Final Enhanced Inventory Application](https://github.com/LoganMeyer17/LoganMeyer17.github.io/tree/main/Final%20Enhanced%20Inventory%20Application)
+- [View the Database Testing Evidence](https://github.com/LoganMeyer17/LoganMeyer17.github.io/tree/main/Final%20Enhanced%20Inventory%20Application/Testing%20Evidence)
