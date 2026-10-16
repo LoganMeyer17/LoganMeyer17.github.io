@@ -4,6 +4,14 @@ CS 499 Capstone Portfolio
 
 ## Code Review
 
+## Professional Self-Assessment
+
+This self-assessment reflects on my growth throughout the Computer Science program, the skills demonstrated through my capstone, and my professional goals. It explains how my coursework, instructor feedback, technical enhancements, and testing experience prepared me to begin a career in IT support while continuing to build toward video game development.
+
+- [Read the Professional Self-Assessment](https://loganmeyer17.github.io/professional-self-assessment.html)
+- [Download the Professional Self-Assessment Word Document](https://github.com/LoganMeyer17/LoganMeyer17.github.io/blob/main/Professional%20Self-Assessment.docx)
+
+
 This code review examines the original CS 360 Inventory Tracking application and explains the enhancements planned for software design, algorithms and data structures, and databases.
 
 - <a href="https://youtu.be/_EPFmZ-n9gY">Watch My CS 499 Code Review</a>
