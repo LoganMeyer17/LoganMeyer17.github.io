@@ -49,5 +49,3 @@ The Algorithms testing-evidence folder contains a screenshot showing all 18 test
 Completing this enhancement improved both the application and my understanding of algorithm selection. The final design does not use one structure for every operation. Instead, it combines structures with different strengths and includes synchronization logic and automated tests to manage the resulting trade-offs.
 
 [Return to the ePortfolio Home Page](https://loganmeyer17.github.io/)
-
-[Return to the ePortfolio Home Page](https://loganmeyer17.github.io/)
