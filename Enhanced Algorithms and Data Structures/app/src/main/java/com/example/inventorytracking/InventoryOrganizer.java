@@ -22,7 +22,10 @@ public final class InventoryOrganizer {
     private static final Comparator<InventoryItem> QUANTITY_ORDER =
             Comparator.comparingInt(InventoryItem::getQuantity).thenComparing(NAME_ORDER);
     private static final Comparator<InventoryItem> RESTOCK_ORDER =
-            Comparator.comparingInt(InventoryItem::getShortage).reversed().thenComparing(NAME_ORDER);
+            Comparator.comparingInt((InventoryItem item) -> item.needsRestocking() ? 0 : 1)
+                    .thenComparingInt(InventoryItem::getQuantity)
+                    .thenComparing(Comparator.comparingInt(InventoryItem::getShortage).reversed())
+                    .thenComparing(NAME_ORDER);
 
     private final List<InventoryItem> items = new ArrayList<>();
     private final Map<String, InventoryItem> itemsBySku = new HashMap<>();

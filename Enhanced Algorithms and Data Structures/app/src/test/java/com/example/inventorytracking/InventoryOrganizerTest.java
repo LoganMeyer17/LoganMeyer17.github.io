@@ -57,21 +57,21 @@ public class InventoryOrganizerTest {
     }
 
     @Test
-    public void sortingUsesAtoZLowQuantityAndGreatestShortage() {
+    public void sortingUsesAtoZLowQuantityAndLowestQuantityRestockPriority() {
         assertEquals(Arrays.asList(labels, bolts, tape, boxes), organizer.visibleItems("",
                 InventoryOrganizer.StockFilter.ALL, InventoryOrganizer.SortOption.NAME));
         assertEquals(Arrays.asList(bolts, boxes, labels, tape), organizer.visibleItems("",
                 InventoryOrganizer.StockFilter.ALL, InventoryOrganizer.SortOption.SKU));
         assertEquals(Arrays.asList(boxes, tape, labels, bolts), organizer.visibleItems("",
                 InventoryOrganizer.StockFilter.ALL, InventoryOrganizer.SortOption.QUANTITY));
-        assertEquals(Arrays.asList(tape, boxes, labels, bolts), organizer.visibleItems("",
+        assertEquals(Arrays.asList(boxes, tape, labels, bolts), organizer.visibleItems("",
                 InventoryOrganizer.StockFilter.ALL,
                 InventoryOrganizer.SortOption.RESTOCK_PRIORITY));
     }
 
     @Test
     public void priorityQueueIncludesOnlyItemsBelowRestockLevel() {
-        assertEquals(Arrays.asList(tape, boxes), organizer.restockPriority());
+        assertEquals(Arrays.asList(boxes, tape), organizer.restockPriority());
         assertFalse(labels.needsRestocking());
         assertEquals(0, labels.getShortage());
     }
