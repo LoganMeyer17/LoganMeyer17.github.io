@@ -6,7 +6,7 @@ CS 499 Capstone Portfolio
 
 This code review examines the original CS 360 Inventory Tracking application and explains the enhancements planned for software design, algorithms and data structures, and databases.
 
-<a href="https://youtu.be/_EPFmZ-n9gY">Watch My CS 499 Code Review</a>
+- <a href="https://youtu.be/_EPFmZ-n9gY">Watch My CS 499 Code Review</a>
 
 ## Software Design and Engineering
 
